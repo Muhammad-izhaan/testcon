@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional business consultancy services">
+    <meta name="theme-color" content="#0056b3">
+    <title>ConsultPro - Business Consultancy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-poppins antialiased">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md shadow-md z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <a href="#" class="flex items-center space-x-2 text-primary hover:scale-105 transition-transform duration-300">
+                    <i class="fas fa-chart-line text-2xl md:text-3xl"></i>
+                    <span class="text-lg md:text-xl font-bold">ConsultPro</span>
+                </a>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="menu-toggle flex flex-col space-y-1.5 p-2">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <div class="relative group">
+                        <a href="#services" class="nav-link flex items-center">
+                            Services
+                            <i class="fas fa-chevron-down ml-1 text-xs transition-transform group-hover:rotate-180"></i>
+                        </a>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden min-w-[200px]">
+                                <a href="#strategy" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Strategy Consulting</a>
+                                <a href="#operations" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Operations</a>
+                                <a href="#digital" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Digital Transformation</a>
+                                <a href="#finance" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Financial Advisory</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#team" class="nav-link">Team</a>
+                    <a href="#contact" class="nav-cta">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="md:hidden">
+            <div class="mobile-menu hidden bg-white border-t">
+                <div class="px-4 py-2 space-y-1">
+                    <a href="#home" class="block py-2 text-gray-700">Home</a>
+                    <div class="mobile-dropdown">
+                        <button class="flex items-center justify-between w-full py-2 text-gray-700">
+                            <span>Services</span>
+                            <i class="fas fa-chevron-down text-xs"></i>
+                        </button>
+                        <div class="hidden pl-4 space-y-1">
+                            <a href="#strategy" class="block py-2 text-gray-600">Strategy Consulting</a>
+                            <a href="#operations" class="block py-2 text-gray-600">Operations</a>
+                            <a href="#digital" class="block py-2 text-gray-600">Digital Transformation</a>
+                            <a href="#finance" class="block py-2 text-gray-600">Financial Advisory</a>
+                        </div>
+                    </div>
+                    <a href="#about" class="block py-2 text-gray-700">About</a>
+                    <a href="#team" class="block py-2 text-gray-700">Team</a>
+                    <a href="#contact" class="block py-2 text-primary font-medium">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 md:pt-32 pb-16 md:pb-24 bg-gradient-to-br from-primary to-secondary text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto animate-fade-in-up">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    Transform Your Business
+                </h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-8">
+                    Strategic solutions for sustainable growth
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#contact" class="px-8 py-3 bg-accent text-gray-900 rounded-full font-medium hover:bg-opacity-90 transition-all hover:-translate-y-0.5 transform duration-300">
+                        Get Started
+                    </a>
+                    <a href="#services" class="px-8 py-3 bg-transparent border-2 border-white rounded-full font-medium hover:bg-white hover:text-primary transition-all hover:-translate-y-0.5 transform duration-300">
+                        Our Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="inline-block p-4 bg-white rounded-2xl shadow-lg mb-4">
+                        <i class="fas fa-users text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                        <span class="counter" data-target="500">0</span>+
+                    </h3>
+                    <p class="text-gray-600">Happy Clients</p>
+                </div>
+                <div class="text-center">
+                    <div class="inline-block p-4 bg-white rounded-2xl shadow-lg mb-4">
+                        <i class="fas fa-project-diagram text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                        <span class="counter" data-target="1000">0</span>+
+                    </h3>
+                    <p class="text-gray-600">Projects Completed</p>
+                </div>
+                <div class="text-center">
+                    <div class="inline-block p-4 bg-white rounded-2xl shadow-lg mb-4">
+                        <i class="fas fa-award text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                        <span class="counter" data-target="50">0</span>+
+                    </h3>
+                    <p class="text-gray-600">Awards Won</p>
+                </div>
+                <div class="text-center">
+                    <div class="inline-block p-4 bg-white rounded-2xl shadow-lg mb-4">
+                        <i class="fas fa-globe text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                        <span class="counter" data-target="25">0</span>+
+                    </h3>
+                    <p class="text-gray-600">Countries Served</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">Our Trusted Clients</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <p class="text-lg text-gray-600 mb-4">"Their strategic insights transformed our business operations completely."</p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Client CEO" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900">John Anderson</h4>
+                            <p class="text-gray-600">CEO, Tech Solutions Inc</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <p class="text-lg text-gray-600 mb-4">"Outstanding results and exceptional service quality."</p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Client Director" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900">Sarah Mitchell</h4>
+                            <p class="text-gray-600">Director, Innovation Labs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <p class="text-lg text-gray-600 mb-4">"Their expertise helped us achieve remarkable growth."</p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Client President" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900">Michael Chen</h4>
+                            <p class="text-gray-600">President, Global Ventures</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">Leadership Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <div class="flex justify-center mb-8">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Adil Latif" class="w-24 h-24 rounded-full">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 text-center">Adil Latif</h3>
+                    <p class="text-gray-600 text-center">Chief Executive Officer</p>
+                    <div class="flex justify-center mt-4">
+                        <a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300 ml-4">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300 ml-4">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <div class="flex justify-center mb-8">
+                        <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Adil" class="w-24 h-24 rounded-full">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 text-center">Adil</h3>
+                    <p class="text-gray-600 text-center">Chief Technology Officer</p>
+                    <div class="flex justify-center mt-4">
+                        <a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300 ml-4">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300 ml-4">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <div class="flex justify-center mb-8">
+                        <img src="https://randomuser.me/api/portraits/men/34.jpg" alt="Adii" class="w-24 h-24 rounded-full">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 text-center">Adii</h3>
+                    <p class="text-gray-600 text-center">Chief Operations Officer</p>
+                    <div class="flex justify-center mt-4">
+                        <a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300 ml-4">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300 ml-4">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="relative py-24 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+        <!-- Decorative shapes -->
+        <div class="absolute top-0 left-0 w-72 h-72 bg-primary/5 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full translate-x-1/2 translate-y-1/2"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                    Let's Start a Project Together
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
+                <!-- Contact Form -->
+                <div class="lg:col-span-3 bg-white rounded-3xl shadow-2xl p-8 md:p-12 transform transition-all duration-300 hover:scale-[1.02]">
+                    <form class="space-y-8">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="relative group">
+                                <input type="text" required class="block w-full px-4 h-12 text-gray-800 bg-gray-50 rounded-xl outline-none ring-1 ring-gray-200 transition-all duration-300 focus:ring-2 focus:ring-primary focus:bg-white" placeholder="Name">
+                                <span class="absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full w-0"></span>
+                            </div>
+                            <div class="relative group">
+                                <input type="email" required class="block w-full px-4 h-12 text-gray-800 bg-gray-50 rounded-xl outline-none ring-1 ring-gray-200 transition-all duration-300 focus:ring-2 focus:ring-primary focus:bg-white" placeholder="Email">
+                                <span class="absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full w-0"></span>
+                            </div>
+                        </div>
+                        <div class="relative group">
+                            <input type="text" required class="block w-full px-4 h-12 text-gray-800 bg-gray-50 rounded-xl outline-none ring-1 ring-gray-200 transition-all duration-300 focus:ring-2 focus:ring-primary focus:bg-white" placeholder="Subject">
+                            <span class="absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full w-0"></span>
+                        </div>
+                        <div class="relative group">
+                            <textarea required rows="6" class="block w-full p-4 text-gray-800 bg-gray-50 rounded-xl outline-none ring-1 ring-gray-200 transition-all duration-300 focus:ring-2 focus:ring-primary focus:bg-white resize-none" placeholder="Your message"></textarea>
+                            <span class="absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full w-0"></span>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white h-12 rounded-xl font-medium relative overflow-hidden group">
+                            <span class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-primary w-0 transition-all duration-500 ease-out group-hover:w-full"></span>
+                            <span class="relative">Send Message</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="lg:col-span-2 space-y-8">
+                    <div class="bg-white p-8 rounded-3xl shadow-xl transform transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-xl text-primary"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">Visit Us</h3>
+                                <p class="text-gray-600 mt-1">123 Business Ave, Suite 100<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-xl transform transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center">
+                                    <i class="fas fa-phone text-xl text-primary"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">Call Us</h3>
+                                <p class="text-gray-600 mt-1">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-xl transform transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex items-center space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center">
+                                    <i class="fas fa-envelope text-xl text-primary"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900">Email Us</h3>
+                                <p class="text-gray-600 mt-1">info@consultpro.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 relative">
+        <!-- Wave Shape -->
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0] rotate-180">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-[60px]">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-white"></path>
+            </svg>
+        </div>
+
+        <div class="relative pt-24 pb-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                    <!-- Brand -->
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-bold text-white">ConsultPro</h3>
+                        <p class="text-gray-400">Transforming businesses through innovative solutions and strategic consulting.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="group">
+                                <div class="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center transform transition-all duration-300 group-hover:bg-primary group-hover:rotate-6">
+                                    <i class="fab fa-linkedin-in text-gray-400 group-hover:text-white transition-colors"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="group">
+                                <div class="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center transform transition-all duration-300 group-hover:bg-primary group-hover:rotate-6">
+                                    <i class="fab fa-twitter text-gray-400 group-hover:text-white transition-colors"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="group">
+                                <div class="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center transform transition-all duration-300 group-hover:bg-primary group-hover:rotate-6">
+                                    <i class="fab fa-facebook-f text-gray-400 group-hover:text-white transition-colors"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-white mb-6">Quick Links</h3>
+                        <ul class="space-y-4">
+                            <li>
+                                <a href="#home" class="text-gray-400 hover:text-white transition-colors flex items-center group">
+                                    <span class="w-2 h-2 bg-primary rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#services" class="text-gray-400 hover:text-white transition-colors flex items-center group">
+                                    <span class="w-2 h-2 bg-primary rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                    Services
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#about" class="text-gray-400 hover:text-white transition-colors flex items-center group">
+                                    <span class="w-2 h-2 bg-primary rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="text-gray-400 hover:text-white transition-colors flex items-center group">
+                                    <span class="w-2 h-2 bg-primary rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-white mb-6">Our Services</h3>
+                        <ul class="space-y-4">
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center group">
+                                    <span class="w-2 h-2 bg-primary rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                    Business Strategy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center group">
+                                    <span class="w-2 h-2 bg-primary rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                    Market Analysis
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center group">
+                                    <span class="w-2 h-2 bg-primary rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                    Financial Planning
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center group">
+                                    <span class="w-2 h-2 bg-primary rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                                    Risk Management
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-white mb-6">Newsletter</h3>
+                        <p class="text-gray-400 mb-4">Stay updated with our latest news and insights.</p>
+                        <form class="relative">
+                            <input type="email" placeholder="Enter your email" class="w-full bg-gray-800 text-white rounded-lg py-3 px-4 pr-12 focus:outline-none focus:ring-2 focus:ring-primary">
+                            <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center text-gray-400 hover:text-white transition-colors">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Bottom Bar -->
+                <div class="border-t border-gray-800 pt-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                        <p class="text-gray-400 text-sm">&copy; 2023 ConsultPro. All rights reserved.</p>
+                        <div class="flex space-x-6">
+                            <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

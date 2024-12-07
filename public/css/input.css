@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply px-4 py-2 text-gray-700 hover:text-primary transition-colors relative;
+  }
+  
+  .nav-link::after {
+    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .nav-cta {
+    @apply px-6 py-2 bg-primary text-white rounded-full hover:bg-opacity-90 transition-all hover:-translate-y-0.5 transform duration-300;
+  }
+
+  .menu-toggle span {
+    @apply block w-6 h-0.5 bg-gray-800 transition-all duration-300;
+  }
+
+  .menu-toggle.active span:first-child {
+    @apply transform rotate-45 translate-y-1.5;
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    @apply opacity-0;
+  }
+
+  .menu-toggle.active span:last-child {
+    @apply transform -rotate-45 -translate-y-1.5;
+  }
+}
